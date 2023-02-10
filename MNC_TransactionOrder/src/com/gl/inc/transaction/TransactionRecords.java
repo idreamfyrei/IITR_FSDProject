@@ -4,10 +4,10 @@ package com.gl.inc.transaction;
 public class TransactionRecords {
 
 	public static void main(String[] args) {
-		
 		Tree headNode = null;
 		
-		/*      50
+		/*  Given tree  
+		        50
 	            /\ 
 	          30  60
 	         /     \
@@ -23,7 +23,8 @@ public class TransactionRecords {
 	    
 	    Main.BstToSkewed(tree.node);
 	    
-		Main.IncOrderTransaction(headNode);
+	    System.out.println("The transaction in increasing order is");
+		Main.inOrder(tree.headNode);
 	}
 
 }

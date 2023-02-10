@@ -19,7 +19,8 @@ public class Main {
         BstToSkewed(root.left);
        
         Tree rightNode = root.right;
-        Tree leftNode = root.left;
+       
+        
         
         // Condition to check if the root Node
         // of the skewed tree is not defined
@@ -36,22 +37,21 @@ public class Main {
             prevNode = root;
         }
        
-        // Similarly recurse for the left / right
-        // subtree on the basis of the order required
-        
         
         BstToSkewed(rightNode);
        
     }
     
-    static void IncOrderTransaction(Tree root)
+    //traversal of skewed tree
+    
+    static void inOrder(Tree root)
     {
         if(root == null)
         {
             return;
         }
         System.out.print(root.val + " ");
-        IncOrderTransaction(root.right);       
+        inOrder(root.right);       
     }
 
 }
