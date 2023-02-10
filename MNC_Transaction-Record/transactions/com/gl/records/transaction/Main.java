@@ -17,6 +17,13 @@ public class Main {
 		
 		System.out.println("The transactions in icreasing order is");
 		
+		Main.inOrder(tree.node);
+		
+	}
+
+	private static void inOrder(Node node2) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	private static void Skew(Node node2) {

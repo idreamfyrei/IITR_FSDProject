@@ -11,6 +11,16 @@ public static void Skew(Node node)
 		} 
 		Skew(node.left); 
 	} 
-	
 } 
+
+
+public static void inOrder(Node root) { 
+    if (root == null) 
+       return; 
+		
+    inOrder(root.right); 
+    System.out.print(root.data + " "); 
+  
+ }
+
 }
