@@ -7,6 +7,10 @@ public class Main {
     public static Tree headNode = null;
    
     // binary search tree into a skewed tree in increasing order
+    public static void BstToSkewed(Main tree)
+    {
+    	BstToSkewed(tree.node);
+    }
     static void BstToSkewed(Tree root)
     {
        
@@ -41,6 +45,10 @@ public class Main {
         BstToSkewed(rightNode);
        
     }
+    public static void inOrder()
+    {
+    	inOrder(headNode);
+    }
     
     //traversal of skewed tree
     
@@ -50,7 +58,7 @@ public class Main {
         {
             return;
         }
-        System.out.print(root.val + " ");
+        System.out.print(root.val + " ->");
         inOrder(root.right);       
     }
 
